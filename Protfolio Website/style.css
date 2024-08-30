@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+/* Header started */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0px rgb(227, 224, 224);
+    background-color: white;
+    height: 9vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+
+}
+
+.logo {
+    border: 1.5px solid black;
+    height: 50px;
+    width: 50px;
+}
+
+/* navbar started */
+nav {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.nav-item a {
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    text-decoration: underline;
+    color: rgb(156, 56, 36);
+}
+
+/* navbar media quaries  */
+/* meadium devices (portrait tablets and large phones, 600px and up) */
+@media(max-width: 1020px) {
+    .nav-item a {
+        font-size: 12px;
+    }
+
+    .logo {
+        border: 1.5px solid black;
+        height: 30px;
+        width: 40px;
+    }
+
+    .header-sec3 p {
+        display: none;
+    }
+
+    nav {
+        width: 40vw;
+        justify-content: space-evenly;
+
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+@media only screen and (max-width : 600px) {
+
+    .nav-item a {
+        font-size: 10px;
+    }
+
+    nav {
+        width: 80vw;
+        justify-content: space-evenly;
+
+
+    }
+
+    .logo {
+        border: 1.5px solid black;
+        height: 25px;
+        width: 35px;
+    }
+
+    .header-sec3 a,
+    .header-sec3 p {
+        display: none;
+    }
+}
+
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width:1021px) {
+    .nav-item a {
+        font-size: 18px;
+    }
+
+    .logo {
+        border: 1.5px solid black;
+        height: 40px;
+        width: 50px;
+    }
+}
+
+/* navbar media quaries end here */
+/* navbar end here */
+
+
+/* header sec  */
+.header-sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sec3 {
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.header-sec3 img {
+    height: 25px;
+    width: 30px;
+}
+
+.header-sec3 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* header-sec end */
+/* header end here */
+
+
+/* main stared  */
+main {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100vw;
+
+
+}
+
+/* home section started */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    gap: 1vw;
+    margin-top: 5vh;
+    width: 100vw;
+    background-color: rgb(0, 220, 220);
+
+}
+
+
+#home-section div {
+    height: 60vh;
+    width: 36vw;
+
+}
+
+.home-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+.home-section-1 h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(14, 14, 14);
+}
+
+.home-section-1 h1 :nth-child(2) {
+    color: blue;
+}
+
+.home-section-1 h1 button {
+    font-size: 25px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 228);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.home-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-section-2 img {
+    max-height: 65%;
+    width: auto;
+    border-radius: 50%;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 7px 0px;
+
+}
+
+/* home section media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+
+    #home-section div {
+        height: 40vh;
+        width: 36vw;
+
+    }
+
+    .home-section-1 h1 {
+        font-size: 20px;
+    }
+
+    .home-section-2 img {
+        max-height: 55%;
+        width: auto;
+        border-radius: 50%;
+
+
+    }
+
+    .home-section-1 h1 button {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        border-radius: 19px;
+
+    }
+
+    #home-section div {
+        height: 20vh;
+        width: 36vw;
+
+    }
+
+    .home-section-1 h1 {
+        font-size: 15px;
+
+    }
+
+    .home-section-1 h1 button {
+        font-size: 15px;
+        margin-top: 10px;
+        border-radius: 5px;
+
+    }
+
+    .home-section-2 img {
+        max-height: 100%;
+        width: auto;
+        border-radius: 50%;
+
+
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width:1021px) {
+    .hero {
+        background-color: white;
+    }
+}
+
+
+/* home section media quaries ends here */
+
+/* home section ends here */
+
+
+
+
+
+/* about-section starts */
+#about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+    gap: 1vw;
+    background-color: rgb(188, 231, 231);
+
+
+
+
+}
+
+.about-section-1 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-section-1 h1,
+.heading {
+    font-size: 40px;
+    font-size: 700;
+    color: rgb(73, 73, 238);
+    text-decoration: underline;
+}
+
+.about-section-2 {
+    height: 74vh;
+    width: 70vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-section-2 div {
+    height: 40vh;
+    width: 26vw;
+}
+
+.about-section-2i img {
+    max-height: 95%;
+    width: auto;
+    border-radius: 5%;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 6px 0px;
+
+}
+
+.about-section-2ii {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+
+    font-size: larger;
+}
+
+.about-section-2ii h2 {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.about-section-2ii p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* about section media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {
+    #about-section {
+        height: 86vh;
+        padding-top: 20px;
+    }
+
+    .about-section-2i img {
+        max-height: 65%;
+
+    }
+
+    .about-section-2 {
+        height: 85vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .about-section-2i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #about-section {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .about-section-1 h1 {
+        font-size: 30px;
+
+    }
+
+    .about-section-2 {
+        height: 85vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-section-2i img {
+        max-height: 110%;
+
+    }
+
+    .about-section-2 div {
+        height: 27vh;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-section-2i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-section-2ii h2 {
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .about-section-2ii p {
+        font-size: 16px;
+
+    }
+
+    .about-section-2ii {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+
+        font-size: larger;
+        width: 95vw;
+
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width:1021px) {
+   
+} */
+
+
+/* about section media quaries ends here */
+/* about-section end here */
+
+/* skills section starts  */
+#skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    background-color: rgb(216, 229, 210);
+    width: 100vw;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 2%;
+
+}
+
+.skills-section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vw;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
+}
+
+.skills-logo img {
+    height: 120px;
+    width: auto;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 6px 0px;
+    border-radius: 10%;
+    transition-duration: 200ms;
+}
+
+.skills-logo img:hover {
+    height: 125px;
+    cursor: pointer;
+    border: 1px solid rgb(215, 60, 8);
+}
+
+.skills-logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills-logo h3 a {
+    text-decoration: none;
+}
+
+.skills-logo h3 a:hover {
+    text-decoration: underline;
+
+}
+
+.skills-section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* skills media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {
+    .skills-section-1 h2 {
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+}
+
+
+/* skills media quaries end here */
+
+/* skills section ends */
+
+/* project section starts   */
+#project-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100vw;
+
+    gap: 20px;
+    background-color: rgb(245, 238, 226);
+    padding-top: 20px;
+    height:80vh;
+    padding-bottom: 50px;
+}
+
+.project-section-2 div img {
+    width: 400px;
+    height: auto;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 6px 0px;
+    border-radius: 20px;
+}
+
+.project-section-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.project-section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10vw;
+    justify-content: space-evenly;
+}
+
+.project-section-2-1,
+.project-section-2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-section-2-1i,
+.project-section-2-2i {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-section-2-1i button,
+.project-section-2-2i button {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    background-color: rgb(254, 254, 255);
+    border-radius: 6px;
+    width: 130px;
+}
+.project-section-2-1i button:hover,
+.project-section-2-2i button:hover {
+    background-color: greenyellow;
+}
+
+.project-section-2-1i:nth-child(1),
+.project-section-2-2i:nth-child(1) {
+
+    background-color: rgb(220, 36, 12);
+
+
+}
+
+/* project media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .project-section-2 div img {
+        width: 200px;
+
+    }
+
+    .project-section-2-1i button,
+    .project-section-2-2i button {
+        font-size: 12px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        background-color: blue;
+        border-radius: 6px;
+        width: 85px;
+
+    }
+
+
+}
+
+/* large laptop desktop */
+@media only screen and (min-width: 1021px) {}
+
+/* project media quaries end here */
+
+/* project section ends here */
+/* Resume section Start here  */
+#resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(213, 235, 232);
+    padding: 20px 0px;
+}
+
+.resume-section-2 div img {
+    height: 300px;
+    width: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px 0px;
+
+}
+
+.resume-section-2 div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-section-2 div button {
+    background-color: rgb(32, 182, 9);
+    color: white;
+    width: 140px;
+    height: auto;
+    font-size: 23px;
+    font-family: sans-serif;
+    border-radius: 5%;
+    border: 2px solid grey;
+    box-shadow: 0px 0px 6px 0px;
+    cursor: pointer;
+}
+
+/* resume media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {
+    .heading {
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* large laptop desktop */
+@media only screen and (min-width: 1021px) {}
+
+/* resume  media quaries ends here */
+/* Resume section ends here  */
+
+/* contact section starts */
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(213, 223, 233);
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.contact-section-2-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.contact-section-2-form button {
+    width: 160px;
+    height: 35px;
+    background-color: blueviolet;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#form-name {
+    width: 340px;
+    height: 50px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+#form-email {
+    width: 340px;
+    height: 45px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+#form-text {
+    width: 340px;
+    height: 300px;
+    border-radius: 2%;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.input-tag:hover {
+    border: 2px solid gray;
+
+}
+
+.input-tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact media quaries started  */
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1020px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #form-name {
+        width: 70vw;
+        height: 45px;
+        border-radius: 9px;
+        font-size: 14px;
+
+    }
+
+    #form-email {
+        width: 70vw;
+        height: 45px;
+        border-radius: 9px;
+        font-size: 14px;
+
+    }
+
+    #form-text {
+        width: 70vw;
+        height: 250px;
+        font-size: 14px;
+
+    }
+
+}
+
+/* large laptop desktop */
+@media only screen and (min-width: 1021px) {}
+
+/* contact  media quaries ends here */
+/* contact section ends  */
+
+/* main end here */
+
+/* footer satrts here */
+footer{
+    display: flex;
+    background-color: rgb(45, 50, 64);
+    flex-direction: column;
+    height: auto;
+}
+#footer {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   padding-left: 12vw;
+    justify-content: center;
+    gap: 2vw;
+  
+    padding: 30px 0px;
+    color: rgb(214, 205, 205);
+}
+
+.footer-section {
+    width: 23vw;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    flex-wrap: wrap;
+  
+}
+.footer-section h1,.footer-section a,.footer-section p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+#footer-section-1 {
+
+    gap: 20px;
+}
+#footer-section-1 p{
+font-size: 18px;
+} 
+
+#footer-section-2 {
+align-items: flex-start;
+width: 200px;
+}
+
+#footer-section-2 , #footer-section-3{
+    gap: 5px;
+    
+}
+#footer-section-2  a, #footer-section-3 a {
+ text-decoration: none;
+ color: rgb(214, 205, 205);
+ font-size: 18px;
+    
+}
+#footer-section-2  a:hover {
+    color: rgb(221, 221, 24);
+   }
+
+#footer-section-2  h1,#footer-section-3 h1 {
+    margin-bottom: 20px;
+    
+   }
+   .footer-section h1{
+    color: aliceblue;
+   }
+
+#copyright{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(220, 211, 211);
+}
+
+
+/* footer media quaries starts  */
+
+/* Meadium devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1023px) {
+    .footer-section{
+        width: 230px;
+    }
+    .footer-section h1{
+        font-size: 22px;
+    }
+    #footer-section-2  a, #footer-section-3 a {
+        font-size: 14px;
+           
+       }
+       
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+ .footer-section{
+    width: 300px;
+ }
+ footer-section-2 {
+    
+    width: 150px;
+    }
+}
+#footer{
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 0px;
+    margin-left: 30pxs;
+}
+
+/* large laptop desktop */
+@media only screen and (min-width: 1023px) {
+    #footer{
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 10px 0px;
+    }
+}
+
+
+/* footer media quaries ends  */
+/* footer ends here */
